@@ -1,13 +1,14 @@
 
 <% if user_signed_in? %>
-	# you can put anything you want here
+	<div class="page-header">
+  	<h1>First Pins<p><small>Make every day a first!</small></p></h1>
+	</div>
+
 <% else %>
 	<div class="hero-unit">
-		<h1>Welcome to One Month Rails!</h1>
+		<h1>Welcome to TheFirstPlace!</h1>
 		<p>
-			You've found the home page for the 
-			<%= link_to "One Month Rails", "http://onemonthrails.com" %>
-			application.
+			When was the last time you did something for the first time?
 		</p>
 		<p>
 			<%= link_to "Sign Up Now!", new_user_registration_path, class: "btn btn-primary btn-large" %>
